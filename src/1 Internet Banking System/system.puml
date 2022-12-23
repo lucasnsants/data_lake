@@ -1,0 +1,15 @@
+@startuml
+!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+
+Person(pbc, "Usuário", "Qualquer brasileiro que queira consultar os dados inserido no data lake.")
+System_Ext(pbda, "Portal Brasileiro de Dados Abertos", "Tem o objetivo de ser o ponto central para a busca, o acesso e uso dos dados abertos governamentais.")
+
+Boundary(dl, "Data Lake dos Dados Públicos Brasileiro", "architecture") {
+
+}
+
+
+@enduml
